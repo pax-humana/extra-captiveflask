@@ -1,4 +1,4 @@
-# file => merrill_gardens.py
+# file => mg.py
 from wifipumpkin3.plugins.captiveflask.plugin import CaptiveTemplatePlugin
 import wifipumpkin3.core.utility.constants as C # import plugin class base
 
@@ -17,4 +17,4 @@ class merrill_gardens(CaptiveTemplatePlugin):
         for key,value in self.meta.items():
             self.__dict__[key] = value
         self.dict_domain = {}
-        self.ConfigParser = Flase 
+        self.ConfigParser = False 
