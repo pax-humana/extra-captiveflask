@@ -8,9 +8,9 @@ class merrill_gardens(CaptiveTemplatePlugin):
         'Version'   : '1.0',
         'Description' : 'Merrill Gardens login page',
         'Author'    : 'paxhumana',
-        'TemplatePath' : C.TEMPLATES_FLASK +'templates/merrill_gardens',
-        'StaticPath' : C.TEMPLATES_FLASK + 'templates/merrill_gardens/static',
-        'Preview' : 'plugins/captivePortal/templates/merrill_gardens/preview.png'
+        'TemplatePath' : C.TEMPLATES_FLASK +'templates/mg',
+        'StaticPath' : C.TEMPLATES_FLASK + 'templates/mg/static',
+        'Preview' : 'plugins/captivePortal/templates/mg/preview.png'
     }
 
     def __init__(self):
