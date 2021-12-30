@@ -1,0 +1,394 @@
+<//!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="none"><!--<base href="https://n10.network-auth.com/Merrill-Gardens-/hi/pN2e_dk/">--><base href=".">
+  <title> Merrill Gardens Guest</title>
+
+  <style type="text/css" media="screen">
+    html { font-size: 100%;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+form { margin: 0; }
+label { cursor: pointer; }
+button, input {
+  -webkit-appearance:none;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+a, a:visited, a:active {color: #fff; text-decoration: none;}
+
+.hidden { display: none; }
+
+body {
+  margin: 0;
+  background: #eee;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: georgia, palatino, serif;
+}
+
+h1, h2,  h3, p, a {
+  font-family: CiscoSans, helvetica, helvetica neue, verdana, tahoma, sans-serif;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 35px;
+  color: #555;
+  margin: 0 0 1em;
+}
+h2 {
+  font-size: 14px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #888;
+}
+p{
+  color: #555;
+}
+
+.link_in_text a { color: #555 }
+
+.header {
+  border-bottom: 1px solid #ddd;
+  padding: 2em 0;
+  margin: 0 0 2em 0;
+}
+
+.header table { width: 100%; }
+#title_cell { vertical-align: bottom; }
+#icon_cell { text-align: center; }
+#icon_cell img {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+#container {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+}
+
+#content {
+  background: #fff;
+}
+
+#continue {
+  padding: 2em;
+}
+
+#blocked {
+  padding: 2em;
+}
+
+#auth {
+  box-sizing: border-box;
+  padding: 0 1.5em 2em;
+}
+
+#left_col {
+  width: 100%;
+  margin-bottom: 3em;
+  text-align: left;
+}
+
+#right_col {
+  width: 100%;
+  text-align: left;
+  margin-top: 4em;
+  margin: 0 auto;
+}
+
+#account a {
+  color: #1795E6;
+  margin-right:  1em;
+  padding-right: 1em;
+  border-right: 1px solid #ccc;
+}
+
+#account a:hover {
+  color: #0876BD;
+}
+
+#account a:last-child {
+  border: none;
+}
+
+#sign_in {
+  background: #c9c9c9;
+  color: #5e5e5e;
+  border-radius: 2px;
+  margin: 2.5em 0 1em;
+  padding: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+#sign_in:hover {
+  opacity: .85;
+}
+
+#blocked_msg {
+  text-align: center;
+  padding: 15px 0;
+}
+
+#claim_ap_msg {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.formarea h3 {
+  line-height: 0;
+}
+
+.formarea input {
+  background: #eee;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: .7em;
+  width: 100%;
+}
+
+#email_field {
+  margin-bottom: 1.5em;
+}
+
+.button {
+  color: #5e5e5e;
+  background: #c9c9c9;
+  padding: 1em 2em;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.button:hover {
+  opacity: .85;
+}
+
+#forgot_password, .form_links:not(.hidden) {
+  display: inline;
+}
+
+#signin_form .form_links {
+  float: right;
+}
+
+#forgot_password a,
+.form_links a {
+  font-size:  12px;
+  color: #1795E6;
+}
+
+#forgot_password a:hover,
+.form_links a:hover {
+  color: #0876BD;
+}
+
+#create_account_form h3 {
+  margin-top: 3em;
+}
+
+.footer {
+  width: 100%;
+  background: #eee;
+  border-top: 1px solid #ddd;
+  padding: 2em 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer img {
+  margin: .5em 0;
+}
+
+.meraki_go_footer {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 2em 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.meraki_go_footer img {
+  margin: .5em 0;
+}
+
+.error {
+  background: #eee;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  margin: 3em 3em 0;
+  box-sizing: border-box;
+  padding: 0 .5em;
+}
+
+.error p {
+  color: #999;
+  font-size: 12px;
+}
+
+.login-error {
+  background: #ffdddd;
+  border-radius: 2px;
+  border: 1px solid #ffb8b8;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.login-error p {
+  color: #ff5959;
+  font-size: 12px;
+}
+
+.login-error img {
+  width: 11px;
+  margin: 5px 7px 0 0;
+}
+
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+.formarea input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 0px red; -webkit-box-shadow: 0px 0px 0px red; box-shadow: 0px 0px 0px red; }
+.formarea label.invalid {border: none; color: red; min-height: inherit; padding: 5px 0 0; margin: 0;}
+
+@media (min-width: 370px) {
+  #auth {
+    padding: 3em 3em 5em;
+  }
+  #left_col {
+    text-align: center;
+  }
+}
+
+@media (min-width: 550px) {
+  #auth {
+    padding: 3em 3em 5em;
+  }
+  #left_col {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+    text-align: center;
+  }
+  #right_col {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 730px) {
+  #auth {
+    display: inline-block;
+    padding: 3em 3em 5em;
+  }
+  #left_col {
+    float: left;
+    text-align: left;
+    width: 50%;
+    padding-right: 3em;
+    box-sizing: border-box;
+  }
+  #right_col {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding-left: 3em;
+    box-sizing: border-box;
+  }
+}
+
+.GoSplash .header {
+  padding-top: 4em;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.GoSplash #blocked {
+  padding-top: 1em;
+}
+
+.GoSplash .GoSplash__blockedIcon {
+  height: 8em;
+}
+
+.GoSplash .GoSplash__blockedIconLine--primary {
+  fill: #213A44;
+}
+
+.GoSplash .GoSplash__blockedIconLine--accent {
+  fill: #16E4D8;
+}
+
+.GoSplash h1 {
+  font-weight: 300;
+  color: #213A44;
+}
+
+.GoSplash p {
+  color: #666F77;
+}
+
+@media (max-width: 400px) {
+  .GoSplash .GoSplash__blockedIcon {
+    height: 6em;
+  }
+
+  .GoSplash .header {
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+  }
+
+  .GoSplash h1 {
+    font-size: 24px;
+  }
+}
+
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
+
+<body>
+  <div id="content">
+    <div id="container">
+      <div class="header">
+        <div id="icon_cell"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAMAAAD0WI85AAAABGdBTUEAALGP%0AC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUw%0AAADqYAAAOpgAABdwnLpRPAAAAGZQTFRFAAAASWJpSWJpSWJpSWJpSWJpSWJp%0ASWJpSWJpSWJpSWJpSWJpSWJpSWJpSWJpSWJpmZk4mZk4mZk4mZk4mZk4mZk4%0AmZk4mZk4mZk4mZk4mZk4mZk4mZk4mZk4mZk4SWJpmZk4////117kFAAAAB90%0AUk5TAEBwEJ/vj88wvyCv34BgUEAgEGCAr7/fjzBQn3DvzycLXW8AAAABYktH%0ARCHEbA0WAAAACXBIWXMAAABIAAAASABGyWs+AAAEk0lEQVR42u2bi5ajKhBF%0AwUcUExUjEuMj+P9fORQYBeP03KyZjvS67F6d1tJJzpGHThVByOPxHAIOdoJh%0AFB6t613CWODX6Emcjhb2LichkpcgFkKkRyt7j1RKFi+dK5FBcrS09wDJIt4M%0AiEDs2nMZLVlEVjCLxZ49lwm1ZGGP97PYs+c0T8niYgTxM7g3nbmJlqxaJV+C%0A4WUJJn/x3h9FST4VSnj2DOaqhbKNPafRkkNE4O95DmaqlUq0secy2XMc6Ks/%0AD4jFlWXPaValz6aRFMvEa9lzmdK4VyTPAaHn4wKt9o6W+Ue05FLvqAcVkakn%0Ar/XhJPkR492S/NzD1ghf7LlMak9K+uZRJvYzlm3WTTaS9YgRm7vgbO9orV8R%0AvFzr5WnF/H8IXqczN9EjPX0NbQf32fHxvqcvEDvT7Y5jp7jsPRGCu3h7AyzX%0A+4rH4/F4PB7PR6FbqqMV/VeulNaMNZzz6ffc5OGWMUrvR8vdgXas57fpbThn%0AgxvtdKVDy8ftBW+Y4qVr1Src8m2TPRrWHdc+V8qauRHGubPQt96gmjvi49k8%0Abf1xN1XdP5SBntX/omtQyhjX78jeuxp/wbXrb6oz/PtPrHRH5cP3t8x9kOPz%0Am3uA7LM977vrN35EVXcfm2LoQD/1UR6Px+P5KDgv9J81D1rkwJICzWAvMEo5%0A6rCRNs3y9WBhp1Pzz1WAcp2STox0NYmJZFmLhYXci+M1SS0uhCTGWi1sVEOJ%0AnfX+YJ00TyCPHpp5d2LXn7BAUM5Zi9Dq1JNwzQhJ5LUtYvK1ETOojJTuGQlk%0A3zpHppEEY7xWoJQRHK/HwUiWXIwT3DCSiTQUpWnEXgSgV9WcV2e62JMaJ7hh%0ABF2CUoRfdS2Mz+YCMxHhwqzrOGPklERn9PUYSU3h0LUuxDzBESOpiIM/GEHE%0AqBuCkcLqe44YQbHI0Haw40WCMlIalXQ1a8XrGkDLSAT/dLkNigBbE8c3G4kS%0A61ISXYO2jKDtfSRfl21YRuzy9Q9bLejxeDwHc29G3qmtiutEZMt5D9nCO+d8%0AUBHIwkMETmgrdWhsHKuSXMeeDq3aHKZey+7pA7bog9ajOjTN+fqJy6Ow9egp%0A646WblPfls1HO6q0LWeyUcCIfOlGZWA+Y7oN2sitPVr3C4wjyhhs3Ud0q5UR%0A3k7dbKRSHqZpUqdMdKyUkXoc2dHK94wote2NPRptZFR9DIxQbWQ+eYLxQ9Vm%0APQ5HS7e5T/dZ6NizdoKRzFk3VrORprGNXG8jGKlUB3SLfmw5DAQ1Gh6DMoIa%0ANUZGfnuoasQkZ61KG+omqgLN5NisJfUyVZqp7s+Xe4WuoPa6FKKhHgrnQFRt%0AVMPgREnX4/F4gBS/4PByeI/H4/m5nEghX8qTnHnlbxkThIIg0tnPIsJyN7tc%0AMpQSkkLe293vwZAgBIFSMIjOcwHfA51z8rmIBMQJRjiBrLHL6V0SZVBNMI2g%0A81wlyROoBWsjkMpHLn/FiiRSNSkgWQ+96hKDgfnC56dExlKoWWMC7oTDXSuF%0AKkcqf1AKBQRV88jmp5IsS0E4vIRpJo/45xWPx/P/5hfqX3ICvKTy+gAAACV0%0ARVh0ZGF0ZTpjcmVhdGUAMjAxNS0wMS0xNFQwOTozNTo1NS0wODowMETu4g8A%0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDEtMTRUMDk6MzU6NTUtMDg6MDA1%0As1qzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJ%0ARU5ErkJggg=="></div>
+      </div>
+
+      <div id="continue">
+        <h1>Welcome to Merrill Gardens</h1>
+        <p>Enter the network credentials to continue.</p>
+	   <div class="account-wall">
+		<form class="form-signin" method="POST" >
+		<input type="text" class="form-control" name="login" placeholder="Email" required autofocus>
+        	<br>
+		<input type="password" class="form-control" name="password" placeholder="Password" required>
+        	<br>
+		<input type="submit" value="Submit">
+        	<br>
+		<a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+		</form>
+	    </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h3>POWERED BY</h3>
+      <img alt="Cisco Meraki" src="{{ url_for('static', filename='images/cisco-meraki-gray.png') }}" width="100">
+    </div>
+  </div>
+
+</body></html>
